@@ -1,0 +1,183 @@
+*{
+    box-sizing: border-box;
+    margin: 0;  
+    padding: 0;
+    max-width: 1500px;
+    margin: 0 auto; 
+
+}
+body{
+    background-color: #E5E5E5;
+    margin-top: 2em;
+}
+
+main{
+    display: flex;
+    align-items: stretch;
+}
+
+section{
+    margin: 1em;
+}
+
+.salida-texto{
+    background-color: white;
+    border-radius: 34px;
+    width: 350px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.salida-text{
+    background-color: white;
+    border-radius: 34px;
+    overflow: auto;
+    width: 350px;
+    height:100%;
+}
+
+#text-result{
+    margin: 10px;
+    font-size: 1.25em;
+    color: #495057;
+
+} 
+
+
+.salida-texto p{
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    color: #495057;
+} 
+
+.salida-texto h3{
+    font-size: 1.25em;
+    text-align: center;
+} 
+
+.items:before{
+    content:url(../asserts/img/bi_exclamation-circle-fill.svg);
+    margin-right: 5px;
+}
+.content-img{
+    width: auto;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+.img-salida  {
+    width: 70%;
+}
+
+.text-decrypt{
+    margin-top: 10%;
+
+}
+
+.ingreso-texto{
+    margin: auto;
+}
+textarea{
+    background-color: #E5E5E5;
+    width: 650px;
+    resize: none;
+    outline:none;
+    border: none;
+    height: 500px;
+    color: #072B61;
+    font-size: 2em;
+    padding: 2em;
+}
+textarea::placeholder {
+    color: #072B61;
+}
+  
+.btn{
+    border-color:   #0A3871;
+    color: #072B61;
+    border-radius: 24px;
+    width: 50vh;
+    height: 10vh;
+    margin: 5px;
+    padding: 25px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bolder;
+}
+.btn-copiar{
+    width: 100%;
+}
+.btn:hover{
+    background-color: #072B61;
+    color: aliceblue;
+    border: none;
+}
+.titulo-final{
+    margin-top: 25px;
+    background-color:  #E5E5E5;
+    color: #495057;
+    text-align: center;
+    font-size: 10px;
+    
+}
+
+@media only screen and (max-width: 1200px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    
+    }
+    .salida-texto{
+        margin: 10%;
+        width: auto;
+    }
+    .salida-text{
+        overflow: auto;
+        width: auto;
+        height:100%;
+    }
+}
+@media only screen and (max-width: 700px) {
+   
+    .btn{
+        width: 100%;
+    }
+    .ingreso-texto{
+        margin: 15px;
+    }
+
+ 
+}
+
+
+
+
+
+@media only screen and (max-width: 450px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    textarea{
+        width: 360px;
+        font-size: 1.7em;
+    }
+    .ingreso-texto{
+        margin: auto;
+    }
+
+    .btn{
+       width: 100%;
+    }
+    .salida-texto{
+        margin: auto;
+    }
+}
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Encriptador</title>
+</head>
+<body>
+
+    <main>
+        <section class="logo-alura">
+            <img src="asserts/img/Logo.png" alt="logo-alura">
+        </section>
+        <section class="ingreso-texto">
+                <textarea  id="textAreas"  required placeholder="Ingrese su texto aquí"></textarea>
+                <p class="items">Solo letras minúsculas y sin acentos</p>
+
+                <button id="btn-encriptar" class="btn">Encriptar</button>
+                <button id="btn-desencriptar" class="btn">Desencriptar</button>
+
+        </section>
+        <section class="salida-texto">
+            <div class="salida-text">
+               <div class="wrapper">
+                <div id="text-result"></div>
+               </div>
+                <div class="text-decrypt">
+                    <div class="content-img">
+                        <img  class="img-salida text-decrypt" src="asserts/img/Muñeco.svg" alt="Imagen de buscador">
+                    </div>
+                    <h3 class="text-decrypt" >Ningún mensaje fue encontrado</h3>
+                    <p class="text-decrypt">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+            <button id="btn-copiar" class="btn btn-copiar">Copiar</button>
+        </section>
+    </main>
+    <footer>
+        <p class="titulo-final">&copy;TUC 2023 | Ciloachamin</p>
+      </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>
