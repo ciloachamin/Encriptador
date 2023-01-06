@@ -61,7 +61,6 @@ section{
     color: #495057;
 }
 
-
 .items:before{
     content:url(../asserts/img/bi_exclamation-circle-fill.svg);
     margin-right: 5px;
@@ -100,7 +99,13 @@ textarea{
 textarea::placeholder {
     color: #072B61;
 }
-  
+#advertencia{
+    position:absolute;
+
+}
+#container{
+    padding: 25px;
+}
 .btn{
     border-color:   #0A3871;
     color: #072B61;
