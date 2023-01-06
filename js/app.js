@@ -10,12 +10,11 @@ var icon = document.querySelector(".items");
 btnCopy.style.display="none";
 
 inMessage.addEventListener("input", function(event) {
-  const regex = /[^a-zA-Z0-9 ]/g;
+  const regex = /[^a-z,?¡¿!]/g;
   
   if (regex.test(event.target.value)) {
     event.target.value = event.target.value.replace(regex, "");
     advertencia.style.color = "red";
-    // advertencia.style.position= "absolute";
     advertencia.style.fontSize = (16 + 100) + "%"
     setTimeout(function() {
       advertencia.style.fontSize = (100)+"%";
@@ -25,6 +24,7 @@ inMessage.addEventListener("input", function(event) {
   } else {
     advertencia.style.color = "#495057";
     advertencia.style.fontSize = (100)+"%";
+    advertencia.style.position= "absolute";
 
   }
 });
