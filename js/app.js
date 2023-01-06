@@ -3,8 +3,32 @@ const btnDecrypt = document.getElementById("btn-desencriptar");
 const btnCopy=document.getElementById("btn-copiar");
 const inMessage = document.getElementById("textAreas");
 const textEncrypt =document.getElementById("text-result")
+const advertencia =document.getElementById("advertencia");
+var icon = document.querySelector(".items");
+
 
 btnCopy.style.display="none";
+
+inMessage.addEventListener("input", function(event) {
+  const regex = /[^a-zA-Z0-9 ]/g;
+  
+  if (regex.test(event.target.value)) {
+    event.target.value = event.target.value.replace(regex, "");
+    advertencia.style.color = "red";
+    // advertencia.style.position= "absolute";
+    advertencia.style.fontSize = (16 + 100) + "%"
+    setTimeout(function() {
+      advertencia.style.fontSize = (100)+"%";
+      advertencia.style.color = "#495057";
+      
+    }, 500);
+  } else {
+    advertencia.style.color = "#495057";
+    advertencia.style.fontSize = (100)+"%";
+
+  }
+});
+
 
 btnEncrypt.addEventListener("click", () => {
     hasText();

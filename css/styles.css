@@ -56,7 +56,11 @@ section{
 .salida-texto h3{
     font-size: 1.25em;
     text-align: center;
-} 
+}
+.items{
+    color: #495057;
+}
+
 
 .items:before{
     content:url(../asserts/img/bi_exclamation-circle-fill.svg);
