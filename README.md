@@ -36,7 +36,7 @@ Buen proyecto!
 
 
 ***VER LANDING PAGES***
-<a href="https://ciloachamin.github.io/Encription/" target="_blank">AQUI</a>
+<a href="https://ciloachamin.github.io/Encriptador/" target="_blank">AQUI</a>
 
 ***¡Vámonos hasta el espacio y más allá Explorers!***
 
